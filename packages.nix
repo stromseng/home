@@ -14,6 +14,7 @@
     bun
     rustup
     nh # nix helper cli tool
+    cmake # rustc compilation dependency
   ];
 
   # Flatpak
