@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
     imports = [
@@ -58,6 +58,11 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
   };
+
+  # Create the repos directory
+  home.activation.createRepoDir = lib.hm.dag.entryAfter ["writeBoundary"] ''
+      mkdir -p ~/repos/
+    '';
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
