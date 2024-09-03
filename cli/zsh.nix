@@ -13,8 +13,8 @@
         ga = "git add";
         gaa = "git add --all";
         gc = "git commit";
-        gp = "git push";
-        gl = "git pull";
+        gph = "git push";
+        gpl = "git pull";
         gco = "git checkout";
         gd = "git diff";
 
