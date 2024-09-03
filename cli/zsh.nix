@@ -1,11 +1,11 @@
-{...}: {
+{ ... }: {
   programs = {
     zsh = {
       enable = true;
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
-      syntaxHighlighting.highlighters = ["main" "brackets"];
+      syntaxHighlighting.highlighters = [ "main" "brackets" ];
       autocd = true;
       defaultKeymap = "emacs";
       shellAliases = {

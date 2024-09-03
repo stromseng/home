@@ -1,13 +1,15 @@
-{ config, pkgs, lib, ... }:
-
-{
-    imports = [
-        ./packages.nix
-        ./cli/starship.nix
-        ./cli/zsh.nix
-        ./cli/git.nix
-    ];
-
+{ config
+, pkgs
+, lib
+, ...
+}: {
+  imports = [
+    ./packages.nix
+    ./cli/starship.nix
+    ./cli/zsh.nix
+    ./cli/git.nix
+    ./desktop/gnome.nix
+  ];
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -60,9 +62,9 @@
   };
 
   # Create the repos directory
-  home.activation.createRepoDir = lib.hm.dag.entryAfter ["writeBoundary"] ''
-      mkdir -p ~/repos/
-    '';
+  home.activation.createRepoDir = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    mkdir -p ~/repos/
+  '';
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
