@@ -9,6 +9,7 @@
     ./cli/zsh.nix
     ./cli/git.nix
     ./desktop/gnome.nix
+    ./school/oz.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -24,6 +25,9 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
+
+  # Enable fontconfig to discover fonts installed through home.packages
+  fonts.fontconfig.enable = true;
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -45,7 +49,7 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
-  
+
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -62,6 +66,11 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+  };
+
+  home.file."testdir" = {
+    source = ./files;
+    recursive = true;
   };
 
   # Create the repos directory

@@ -18,5 +18,12 @@
     "org/gnome/desktop/interface" = {
       show-battery-percentage = true;
     };
+
+    # Fix font rendering for LCD screens
+    "org/gnome/desktop/interface" = {
+        font-hinting = "full";
+        font-antialiasing = "rgba";
+    };
+
   };
 }

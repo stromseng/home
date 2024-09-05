@@ -1,4 +1,9 @@
-{ ... }: {
+{ pkgs, ... }: {
+  # Set zsh to run from bash
+  programs.bash.enable = true;
+  programs.bash.profileExtra = ''
+  zsh
+  '';
   programs = {
     zsh = {
       enable = true;
@@ -9,18 +14,6 @@
       autocd = true;
       defaultKeymap = "emacs";
 
-      antidote = {
-        enable = true;
-        plugins = [
-            "zsh-users/zsh-autosuggestions"
-            "marlonrichert/zsh-autocomplete"
-            "zsh-users/zsh-completions"
-            "zsh-users/zsh-history-substring-search"
-            "MichaelAquilina/zsh-you-should-use"
-            "zsh-users/zsh-syntax-highlighting"
-        ];
-      };
-      
       shellAliases = {
         gs = "git status";
         ga = "git add";
@@ -37,6 +30,8 @@
       initExtraBeforeCompInit = ''
       '';
       initExtra = ''
+      # Python Rye tool
+      source "$HOME/.rye/env"
       '';
     };
     # A modern ls replacement

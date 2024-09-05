@@ -15,6 +15,9 @@
     rustup
     nh # nix helper cli tool
     cmake # rustc compilation dependency
+    vscode
+    gnome-tweaks
+    texliveFull # latex support
   ];
 
   # Flatpak
