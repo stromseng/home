@@ -27,12 +27,13 @@
     {
       appId = "com.discordapp.Discord";
       origin = "flathub";
-    }
-    "io.github.brunofin.Cohesion"
-    "com.sindresorhus.Caprine"
+    } 
+    "io.github.brunofin.Cohesion" # Notion client
+    "com.sindresorhus.Caprine" # Facebook Messenger
     "com.spotify.Client"
     "com.slack.Slack"
-    "com.stremio.Stremio"
-    "com.github.finefindus.eyedropper"
+    "com.stremio.Stremio" # video streaming
+    "com.github.finefindus.eyedropper" #color picker
+    "com.feaneron.Boatswain" # streamdeck software
   ];
 }
