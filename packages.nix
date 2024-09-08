@@ -18,6 +18,7 @@
     vscode
     gnome-tweaks
     texliveFull # latex support
+    ddcutil # monitor brightness control
   ];
 
   # Flatpak
@@ -34,6 +35,6 @@
     "com.slack.Slack"
     "com.stremio.Stremio" # video streaming
     "com.github.finefindus.eyedropper" #color picker
-    "com.feaneron.Boatswain" # streamdeck software
+    "com.core447.StreamController" # streamdeck software
   ];
 }
