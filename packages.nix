@@ -36,5 +36,6 @@
     "com.stremio.Stremio" # video streaming
     "com.github.finefindus.eyedropper" #color picker
     "com.core447.StreamController" # streamdeck software
+    "com.mattjakeman.ExtensionManager" # GNOME extension manager
   ];
 }
