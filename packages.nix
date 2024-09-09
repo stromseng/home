@@ -18,7 +18,6 @@
     vscode
     gnome-tweaks
     texliveFull # latex support
-    ddcutil # monitor brightness control
   ];
 
   # Flatpak
