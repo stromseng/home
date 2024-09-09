@@ -3,6 +3,7 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+    enableBashIntegration = false;
   };
   home.file.".config/starship.toml".source = ./starship.toml;
 }
