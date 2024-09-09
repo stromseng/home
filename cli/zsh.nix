@@ -2,7 +2,6 @@
   # Set zsh to run from bash
   programs.bash.enable = true;
   programs.bash.profileExtra = ''
-  zsh
   '';
   programs = {
     zsh = {
