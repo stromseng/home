@@ -17,7 +17,7 @@
     cmake # rustc compilation dependency
     vscode
     gnome-tweaks
-    texliveFull # latex support
+    texliveBasic # latex support, can switch to texliveFull if necessary
   ];
 
   # Flatpak
