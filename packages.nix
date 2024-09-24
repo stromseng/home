@@ -17,7 +17,6 @@
     cmake # rustc compilation dependency
     vscode
     gnome-tweaks
-    texliveBasic # latex support, can switch to texliveFull if necessary
     uv # python manager
   ];
 
