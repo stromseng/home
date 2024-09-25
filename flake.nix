@@ -41,7 +41,7 @@
             # to pass through arguments to home.nix
           };
           
-          # nh home switch ./.config/home-manager
+          # home-manager switch --flake ~/.config/home-manager
           "magnus@Zenbook" = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
             modules = [
