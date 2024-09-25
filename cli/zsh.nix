@@ -29,8 +29,6 @@
       initExtraBeforeCompInit = ''
       '';
       initExtra = ''
-      # Python Rye tool
-      source "$HOME/.rye/env"
       '';
     };
     # A modern ls replacement

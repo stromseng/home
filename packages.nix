@@ -27,7 +27,7 @@
     {
       appId = "com.discordapp.Discord";
       origin = "flathub";
-    } 
+    }
     "io.github.brunofin.Cohesion" # Notion client
     "com.sindresorhus.Caprine" # Facebook Messenger
     "com.spotify.Client"

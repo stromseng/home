@@ -21,8 +21,8 @@
 
     # Fix font rendering for LCD screens
     "org/gnome/desktop/interface" = {
-        font-hinting = "full";
-        font-antialiasing = "rgba";
+      font-hinting = "full";
+      font-antialiasing = "rgba";
     };
 
   };

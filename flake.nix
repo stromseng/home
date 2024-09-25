@@ -24,19 +24,31 @@
     in
     {
       formatter.x86_64-linux = nixpkgs.legacyPackages.${system}.nixpkgs-fmt;
-      homeConfigurations."magnus" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+      homeConfigurations =
+        {
+          "magnus@zbook" = home-manager.lib.homeManagerConfiguration {
+            inherit pkgs;
 
-        # Specify your home configuration modules here, for example,
-        # the path to your home.nix.
-        modules = [
-          ./home.nix
+            # Specify your home configuration modules here, for example,
+            # the path to your home.nix.
+            modules = [
+              ./home.nix
 
-          nix-flatpak.homeManagerModules.nix-flatpak
-        ];
+              nix-flatpak.homeManagerModules.nix-flatpak
+            ];
 
-        # Optionally use extraSpecialArgs
-        # to pass through arguments to home.nix
-      };
+            # Optionally use extraSpecialArgs
+            # to pass through arguments to home.nix
+          };
+          
+          # nh home switch ./.config/home-manager
+          "magnus@Zenbook" = home-manager.lib.homeManagerConfiguration {
+            inherit pkgs;
+            modules = [
+              ./wsl.nix
+            ];
+          };
+        };
+
     };
 }
