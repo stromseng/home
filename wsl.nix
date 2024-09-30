@@ -51,6 +51,9 @@
     # '')
   ];
 
+  # Disable zsh in WSL, as we cannot use chsh to set a shell installed with nix
+  programs.zsh.enable = lib.mkForce false;
+
   # allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
