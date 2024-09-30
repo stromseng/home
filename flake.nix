@@ -48,6 +48,13 @@
               ./wsl.nix
             ];
           };
+          
+          "magnus" = home-manager.lib.homeManagerConfiguration {
+            inherit pkgs;
+            modules = [
+              ./wsl.nix
+            ];
+          };
         };
 
     };
