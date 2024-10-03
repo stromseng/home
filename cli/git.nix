@@ -9,6 +9,9 @@
     userEmail = "magnus.stromseng@gmail.com";
 
     extraConfig = {
+      pull = {
+        rebase = false;
+      };
 
     };
   };
