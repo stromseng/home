@@ -29,7 +29,7 @@
       initExtraBeforeCompInit = ''
       '';
       initExtra = ''
-      export PATH="/home/magnus/.local/bin:$PATH
+      export PATH="/home/magnus/.local/bin:$PATH"
       '';
     };
     # A modern ls replacement
