@@ -33,6 +33,7 @@
     rustup
     nh # nix helper
     nerdfonts
+    graphviz # python, used for keras visualization
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
